@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Space Grotesk, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto;
+  background: radial-gradient(1200px circle at 20% 0%, rgba(0, 163, 255, 0.14), transparent 60%),
+    radial-gradient(1000px circle at 90% 10%, rgba(0, 255, 153, 0.10), transparent 55%),
+    radial-gradient(900px circle at 60% 100%, rgba(255, 59, 107, 0.10), transparent 55%),
+    #050814;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Neon selection */
+::selection {
+  background: rgba(0, 255, 153, 0.25);
+}
+
+/* Glowing borders */
+.neon-border {
+  border: 1px solid rgba(0, 255, 153, 0.22);
+}
+
+/* Hide native cursor but show cyber cursor layer */
+body {
+  cursor: none;
+}
+
+@media (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+}
+
